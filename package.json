@@ -1,6 +1,6 @@
 {
   "name": "js.node.grunt.config.helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js Grunt Config Helper Class to Help with Grunt configs and tasks",
   "devDependencies": {
     "chai": "^4.1.2",

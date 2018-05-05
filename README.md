@@ -16,7 +16,7 @@ npm install --save-dev js.node.grunt.config.helper
 ### Extend Grunt Config Jit Environment
 Using the Extend functionality in a [jit-grunt](https://github.com/shootaroo/jit-grunt) Environment like:
 
-```
+```text
 Project/
       |build/
       |    |helper/
@@ -31,7 +31,7 @@ Project/
 Extend `task_name.js` with `task1.js` and `task2.js` from `task_name/` directory.
 `task_name.js` filename must be the task name of the Grunt Plugin.
 
-```Javascript
+```js
 // task_name.js
 module.exports = function() {
   const path = require('path');
@@ -45,7 +45,7 @@ module.exports = function() {
 ### Extend Grunt Config in standard Gruntfile.js Environment
 Using the Extend functionality in a standard Grunt Environment:
 
-```
+```text
 Project/
 |build/
 |    |helper/
@@ -58,7 +58,7 @@ Project/
 Extend `Gruntfile.js` with `task1.js` and `task2.js` by filename.
 `task1.js` and `task2.js` filename must be the task name of the Grunt Plugin.
 
-```Javascript
+```js
 // Gruntfile.js
 module.exports = function (grunt) {
 
