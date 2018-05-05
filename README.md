@@ -1,4 +1,6 @@
 [![tests][tests]][tests-url]
+[![coverage][coverage]][coverage-url]
+[![maintainability][maintainability]][maintainability-url]
 
 # js.node.grunt.config.helper
 [Node.js](https://nodejs.org/en/) Grunt Config Helper Class to Help with [Grunt](https://gruntjs.com/) configs and tasks.
@@ -35,8 +37,8 @@ module.exports = function() {
   const path = require('path');
   const GruntConfigHelper = require('js.node.grunt.config.helper');
   const requireDirectory = path.resolve(__dirname, 'task_name');
-  const gruntConfigHelper = new GruntConfigHelper(requireDirectory);
-  return gruntConfigHelper.getTasks();
+  const extendConfigHelper = new GruntConfigHelper(requireDirectory);
+  const tasks = extendConfigHelper.getTasks();
 };
 ```
 
@@ -62,9 +64,9 @@ module.exports = function (grunt) {
 
   const path = require('path');
   const GruntConfigHelper = require('js.node.grunt.config.helper');
-  const requireDirectory = path.resolve(__dirname);
-  const gruntConfigHelper1 = new GruntConfigHelper(requireDirectory);
-  const tasks = gruntConfigHelper1.getTasks();
+  const requireDirectory = path.resolve(__dirname, 'build/helper/_grunt');
+  const extendConfigHelper = new GruntConfigHelper(requireDirectory, true);
+  const tasks = extendConfigHelper.getTasks();
   // Project configuration.
   grunt.initConfig({
     tasks, // {task1: {...}, task2: {...}}
@@ -75,6 +77,14 @@ module.exports = function (grunt) {
 
 [tests]: https://img.shields.io/travis/exiguus/js.node.grunt.config.helper/master.svg
 [tests-url]: https://travis-ci.org/exiguus/js.node.grunt.config.helper
+
+[coverage]:
+https://img.shields.io/codeclimate/coverage/exiguus/js.node.grunt.config.helper/master.svg
+[coverage-url]: https://codeclimate.com/github/exiguus/js.node.grunt.config.helper
+
+[maintainability]:
+https://img.shields.io/codeclimate/maintainability/exiguus/js.node.grunt.config.helper/master.svg
+[maintainability-url]: https://codeclimate.com/github/exiguus/js.node.grunt.config.helper
 
 [npm]: https://img.shields.io/npm/v/js.node.grunt.config.helper.svg
 [npm-url]: https://npmjs.com/package/js.node.grunt.config.helper
