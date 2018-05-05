@@ -9,7 +9,7 @@
 [![npm][npm]][npm-url]
 
 ```
-npm install --save js.node.grunt.config.helper
+npm install --save-dev js.node.grunt.config.helper
 ```
 
 ## Example
@@ -79,12 +79,12 @@ module.exports = function (grunt) {
 [tests-url]: https://travis-ci.org/exiguus/js.node.grunt.config.helper
 
 [coverage]:
-https://img.shields.io/codeclimate/coverage/exiguus/js.node.grunt.config.helper/master.svg
-[coverage-url]: https://codeclimate.com/github/exiguus/js.node.grunt.config.helper
+https://api.codeclimate.com/v1/badges/017792a8149e03c3f71b/test_coverage
+[coverage-url]: https://codeclimate.com/github/exiguus/js.node.grunt.config.helper/test_coverage
 
 [maintainability]:
-https://img.shields.io/codeclimate/maintainability/exiguus/js.node.grunt.config.helper/master.svg
-[maintainability-url]: https://codeclimate.com/github/exiguus/js.node.grunt.config.helper
+https://api.codeclimate.com/v1/badges/017792a8149e03c3f71b/maintainability
+[maintainability-url]: https://codeclimate.com/github/exiguus/js.node.grunt.config.helper/maintainability
 
 [npm]: https://img.shields.io/npm/v/js.node.grunt.config.helper.svg
 [npm-url]: https://npmjs.com/package/js.node.grunt.config.helper
