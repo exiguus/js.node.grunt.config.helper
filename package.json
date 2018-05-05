@@ -1,0 +1,46 @@
+{
+  "name": "js.node.grunt.config.helper",
+  "version": "1.0.0",
+  "description": "Node.js Grunt Config Helper Class to Help with Grunt configs and tasks",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.5.5",
+    "mocha": "^5.1.1"
+  },
+  "scripts": {
+    "start": "npm install",
+    "dist": "npm run doc && npm run test-cover",
+    "doc": "node_modules/jsdoc/jsdoc.js --configure ./jsdoc.json --destination ./doc ./lib/*",
+    "test": "npm run lint && npm run dist",
+    "test-unit": "NODE_ENV=test mocha './lib/*.spec.js'",
+    "test-cover": "istanbul cover _mocha $(find ./lib -name \"*.spec.js\" -not -path \"./node_modules/*\")",
+    "lint": "node_modules/eslint/bin/eslint.js index.js && node_modules/eslint/bin/eslint.js ./lib/*.js"
+  },
+  "keywords": [
+    "grunt",
+    "helper",
+    "config",
+    "node",
+    "node.js"
+  ],
+  "main": "index.js",
+  "author": "Simon Gattner <npm@0x38.de>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exiguus/js.node.grunt.config.helper.git"
+  },
+  "dependencies": {
+    "npm": "^6.0.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
