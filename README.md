@@ -11,7 +11,7 @@ npm install --save js.node.grunt.config.helper
 ```
 
 ## Example
-### Extend Grunt Config Jit Example
+### Extend Grunt Config Jit Environment
 Using the Extend functionality in a [jit-grunt](https://github.com/shootaroo/jit-grunt) Environment like:
 
 ```
@@ -40,7 +40,7 @@ module.exports = function() {
 };
 ```
 
-## Extend Grunt Config Gruntfile.js Example
+### Extend Grunt Config in standard Gruntfile.js Environment
 Using the Extend functionality in a standard Grunt Environment:
 
 ```
