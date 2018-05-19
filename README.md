@@ -47,12 +47,12 @@ Using the Extend functionality in a standard Grunt Environment:
 
 ```text
 Project/
-|build/
-|    |helper/
-|            |_grunt/
-|                  |task1.js
-|                  |task2.js
-|Gruntfile.js
+      |build/
+      |    |helper/
+      |            |_grunt/
+      |                  |task1.js
+      |                  |task2.js
+      |Gruntfile.js
 ```
 
 Extend `Gruntfile.js` with `task1.js` and `task2.js` by filename.

@@ -6,17 +6,17 @@
     "chai": "^4.1.2",
     "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
-    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "istanbul": "^0.4.5",
     "jsdoc": "^3.5.5",
-    "mocha": "^5.1.1"
+    "mocha": "^5.2.0"
   },
   "scripts": {
     "start": "npm install",
     "dist": "npm run doc && npm run test-cover",
-    "doc": "node_modules/jsdoc/jsdoc.js --configure ./jsdoc.json --destination ./doc ./lib/*",
+    "doc": "node_modules/jsdoc/jsdoc.js --configure ./jsdoc.json --destination ./docs ./lib/*",
     "test": "npm run lint && npm run dist",
     "test-unit": "NODE_ENV=test mocha './lib/*.spec.js'",
     "test-cover": "istanbul cover _mocha $(find ./lib -name \"*.spec.js\" -not -path \"./node_modules/*\")",
@@ -37,7 +37,7 @@
     "url": "https://github.com/exiguus/js.node.grunt.config.helper.git"
   },
   "dependencies": {
-    "npm": "^6.0.0"
+    "npm": "^6.0.1"
   },
   "engines": {
     "node": ">= 6.0.0",
