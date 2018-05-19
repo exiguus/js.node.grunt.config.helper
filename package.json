@@ -16,7 +16,7 @@
   "scripts": {
     "start": "npm install",
     "dist": "npm run doc && npm run test-cover",
-    "doc": "node_modules/jsdoc/jsdoc.js --configure ./jsdoc.json --destination ./docs ./lib/*",
+    "doc": "node_modules/jsdoc/jsdoc.js --readme ./README.md --configure ./jsdoc.json --destination ./docs ./lib/*",
     "test": "npm run lint && npm run dist",
     "test-unit": "NODE_ENV=test mocha './lib/*.spec.js'",
     "test-cover": "istanbul cover _mocha $(find ./lib -name \"*.spec.js\" -not -path \"./node_modules/*\")",
