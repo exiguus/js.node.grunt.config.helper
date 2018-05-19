@@ -75,6 +75,9 @@ module.exports = function (grunt) {
   ...
 ```
 
+## Documentation
+[jsDoc](https://exiguus.github.io/js.node.grunt.config.helper/)
+
 [tests]: https://img.shields.io/travis/exiguus/js.node.grunt.config.helper/master.svg
 [tests-url]: https://travis-ci.org/exiguus/js.node.grunt.config.helper
 
